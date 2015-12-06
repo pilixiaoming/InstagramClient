@@ -16,33 +16,34 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="test"
+        android:text="test fdvas  sadfvga gv agv agv svbg sfbg sbg sbgfv sbgf sfbg sfbg sbg sghb sdbg sdbghf sfbgh sfgb dsfbhg sdfgb sfbgh s bgs g"
         android:id="@+id/tvCaption"
-        android:textSize="20sp"
+        android:textSize="15sp"
         android:ellipsize="end"
         android:maxLines="3"
-        android:layout_below="@+id/ivThumbUp"
-        android:layout_toRightOf="@+id/ivCaption"
-        android:layout_toEndOf="@+id/ivCaption"
-        android:layout_marginLeft="5dp" />
+        android:layout_below="@+id/tvLikesCount"
+        android:layout_alignLeft="@+id/tvLikesCount"
+        android:layout_alignStart="@+id/tvLikesCount"
+        android:layout_marginRight="20dp" />
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/ivThumbUp"
         android:src="@drawable/thumb_up"
-        android:layout_alignTop="@+id/ivPhoto"
-        android:layout_toLeftOf="@+id/tvCaption"
-        android:layout_toStartOf="@+id/tvCaption" />
+        android:layout_below="@+id/ivPhoto"
+        android:layout_alignLeft="@+id/ivCaption"
+        android:layout_alignStart="@+id/ivCaption" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="888"
         android:id="@+id/tvLikesCount"
-        android:layout_alignTop="@+id/ivPhoto"
-        android:layout_alignLeft="@+id/tvCaption"
-        android:layout_alignStart="@+id/tvCaption" />
+        android:layout_alignBottom="@+id/ivThumbUp"
+        android:layout_toRightOf="@+id/ivThumbUp"
+        android:layout_toEndOf="@+id/ivThumbUp"
+        android:layout_marginLeft="5dp" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -70,9 +71,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/ivCaption"
         android:src="@drawable/caption"
-        android:layout_marginLeft="24dp"
-        android:layout_marginStart="24dp"
-        android:layout_alignBottom="@+id/tvCaption"
+        android:layout_marginLeft="28dp"
+        android:layout_marginStart="28dp"
+        android:layout_alignTop="@+id/tvCaption"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
