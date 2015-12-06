@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivPhoto"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="test"
+        android:id="@+id/tvCaption"
+        android:textSize="20sp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:layout_below="@+id/ivThumbUp"
+        android:layout_toRightOf="@+id/ivCaption"
+        android:layout_toEndOf="@+id/ivCaption"
+        android:layout_marginLeft="5dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivThumbUp"
+        android:src="@drawable/thumb_up"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:layout_toLeftOf="@+id/tvCaption"
+        android:layout_toStartOf="@+id/tvCaption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="888"
+        android:id="@+id/tvLikesCount"
+        android:layout_alignTop="@+id/ivPhoto"
+        android:layout_alignLeft="@+id/tvCaption"
+        android:layout_alignStart="@+id/tvCaption" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="yuandaxia"
+        android:id="@+id/tvUsername"
+        android:layout_marginRight="95dp"
+        android:layout_marginEnd="95dp"
+        android:layout_alignTop="@+id/tvBy"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="By: "
+        android:id="@+id/tvBy"
+        android:layout_alignTop="@+id/tvLikesCount"
+        android:layout_toLeftOf="@+id/tvUsername"
+        android:layout_toStartOf="@+id/tvUsername" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivCaption"
+        android:src="@drawable/caption"
+        android:layout_marginLeft="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_alignBottom="@+id/tvCaption"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
